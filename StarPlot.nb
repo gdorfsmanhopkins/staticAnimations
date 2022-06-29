@@ -1,0 +1,115 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4130,        107]
+NotebookOptionsPosition[      3842,         94]
+NotebookOutlinePosition[      4177,        109]
+CellTagsIndexPosition[      4134,        106]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"f", "[", 
+     RowBox[{"x_", ",", "y_", ",", "a_"}], "]"}], " ", ":=", " ", 
+    RowBox[{"2", " ", "+", " ", 
+     RowBox[{"a", "*", 
+      RowBox[{"Cos", "[", 
+       RowBox[{
+        RowBox[{"5", "*", 
+         RowBox[{"ArcTan", "[", 
+          RowBox[{"x", ",", "y"}], "]"}]}], " ", "+", " ", 
+        RowBox[{"2", "*", "Pi", "*", "a"}]}], "]"}]}]}]}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"starPlot", "[", "b_", "]"}], " ", ":=", " ", 
+    RowBox[{"RegionPlot", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"Sqrt", "[", 
+        RowBox[{
+         RowBox[{"x", "^", "2"}], "+", 
+         RowBox[{"y", "^", "2"}]}], "]"}], ">", 
+       RowBox[{"f", "[", 
+        RowBox[{"x", ",", "y", ",", "b"}], "]"}]}], ",", 
+      RowBox[{"{", 
+       RowBox[{"x", ",", 
+        RowBox[{"-", "3"}], ",", "3"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"y", ",", 
+        RowBox[{"-", "3"}], ",", "3"}], "}"}], ",", 
+      RowBox[{"BoundaryStyle", "\[Rule]", "None"}], ",", 
+      RowBox[{"PlotStyle", "\[Rule]", "Black"}], ",", 
+      RowBox[{"Frame", "\[Rule]", "False"}], ",", 
+      RowBox[{"PlotPoints", "\[Rule]", "50"}], ",", 
+      RowBox[{"WorkingPrecision", "\[Rule]", "50"}]}], "]"}]}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"pathname", "=", 
+    RowBox[{"NotebookDirectory", "[", "]"}]}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{"ParallelTable", "[", 
+    RowBox[{
+     RowBox[{"Export", "[", 
+      RowBox[{
+       RowBox[{"pathname", "<>", "\"\<polarStar_\>\"", "<>", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"1000", " ", "+", " ", 
+          RowBox[{"200", "i"}], " ", "-", " ", "40"}], "]"}], "<>", 
+        "\"\<png\>\""}], ",", 
+       RowBox[{"starPlot", "[", "i", "]"}]}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"i", ",", ".2", ",", "1", ",", ".005"}], "}"}]}], 
+    "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.865163267016473*^9, 3.865163344392239*^9}, {
+   3.865163406634943*^9, 3.865163479723155*^9}, {3.865163551693969*^9, 
+   3.865163567809228*^9}, {3.865163629909915*^9, 3.8651636431940117`*^9}, {
+   3.865164368985293*^9, 3.865164516327077*^9}, {3.865164624445112*^9, 
+   3.865164640776493*^9}, {3.86516467406783*^9, 3.865164680352862*^9}, {
+   3.865164737655065*^9, 3.8651647437030354`*^9}, {3.8651648375036573`*^9, 
+   3.865164856207658*^9}, {3.865164894315226*^9, 3.865165033807227*^9}, {
+   3.865165151121724*^9, 3.865165175264428*^9}, 3.865165216718061*^9, {
+   3.865165295457448*^9, 3.865165340066246*^9}, {3.8651653730779467`*^9, 
+   3.865165447579176*^9}, {3.865165509123479*^9, 3.865165513795508*^9}, {
+   3.8651657709128847`*^9, 3.865165782793378*^9}, {3.865165912386387*^9, 
+   3.865165926337995*^9}, {3.8651668637198133`*^9, 3.865166943059411*^9}, {
+   3.8651669761711397`*^9, 3.865166996139593*^9}, {3.865167379194758*^9, 
+   3.8651673794016743`*^9}, {3.865172844384049*^9, 3.865172878227276*^9}, {
+   3.865174563337078*^9, 3.86517456361373*^9}, {3.865421979846447*^9, 
+   3.865422032891253*^9}, {3.865422071915666*^9, 3.865422072775799*^9}, {
+   3.865460827703837*^9, 
+   3.8654608422117443`*^9}},ExpressionUUID->"a6fbb01b-063a-435b-832a-\
+ddadeaaaf902"]
+},
+WindowSize->{808, 679},
+WindowMargins->{{4, Automatic}, {Automatic, 4}},
+FrontEndVersion->"12.0 for Mac OS X x86 (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 3280, 72, 241, "Input",ExpressionUUID->"a6fbb01b-063a-435b-832a-ddadeaaaf902"]
+}
+]
+*)
+
