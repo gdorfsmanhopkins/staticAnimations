@@ -2,7 +2,7 @@
 Code and accompanying files for the article: Deformation Spaces and Static Animations__
 
 
-This repository contains code to help the user work alongside the tutorial (Section 5.2) in the article referenced above.  This includes:__
+This repository contains code to help the user work alongside the tutorial (Section 5.2) in the article referenced above.  This includes:<br>
 --A Mathematica notebook for generating an image stack of deforming polar stars (StarPlot.nb)__
 --A complete image stack of polar stars in PNG format (Folder containing files of the form polarStar_XXXX.PNG)__
 --A STL file exported from Chimera before postprocessing (starPlotPreProcess.stl)__
