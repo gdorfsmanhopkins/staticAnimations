@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      5757,        161]
-NotebookOptionsPosition[      5180,        141]
-NotebookOutlinePosition[      5518,        156]
-CellTagsIndexPosition[      5475,        153]
+NotebookDataLength[      6030,        165]
+NotebookOptionsPosition[      5393,        144]
+NotebookOutlinePosition[      5789,        160]
+CellTagsIndexPosition[      5746,        157]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -41,13 +41,12 @@ Cell[BoxData[
   RowBox[{"(*", 
    RowBox[{
     RowBox[{
-    "This", " ", "gives", " ", "draws", " ", "a", " ", "Julia", " ", "set", 
-     " ", "with", " ", "a", " ", "coloring", " ", "and", " ", "resolution", 
-     " ", "that", " ", "works", " ", "well", " ", "with", " ", "Chimera"}], 
-    ",", " ", 
+    "This", " ", "draws", " ", "a", " ", "Julia", " ", "set", " ", "with", 
+     " ", "a", " ", "coloring", " ", "and", " ", "resolution", " ", "that", 
+     " ", "works", " ", "well", " ", "with", " ", "Chimera"}], ",", 
     RowBox[{
-    "but", " ", "can", " ", "be", " ", "increased", " ", "for", " ", "more", 
-     " ", "detail"}]}], "*)"}], "\[IndentingNewLine]", 
+    "resolution", " ", "can", " ", "be", " ", "increased", " ", "for", " ", 
+     "more", " ", "detail"}]}], "*)"}], "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
     RowBox[{"jset", "[", "c_", "]"}], ":=", 
@@ -71,8 +70,10 @@ Cell[BoxData[
            RowBox[{"-", "2"}]}], "}"}]}], "}"}]}], ",", 
       RowBox[{"ImageResolution", "\[Rule]", "1000"}], ",", 
       RowBox[{"ImageSize", "\[Rule]", "1000"}], ",", 
-      RowBox[{"Frame", "\[Rule]", "False"}]}], "]"}]}], "\[IndentingNewLine]",
-    "\[IndentingNewLine]", 
+      RowBox[{"Frame", "\[Rule]", "False"}], ",", " ", 
+      RowBox[{"ImagePadding", "\[Rule]", "None"}], ",", " ", 
+      RowBox[{"PlotRangePadding", "\[Rule]", "None"}]}], "]"}]}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
    RowBox[{"(*", 
     RowBox[{
     "The", " ", "parametrization", " ", "of", " ", "a", " ", "curve", " ", 
@@ -134,15 +135,18 @@ Cell[BoxData[
    3.834047302913789*^9}, {3.834047483819333*^9, 3.834047497099219*^9}, {
    3.865462232624404*^9, 3.865462445199525*^9}, {3.8654624754458303`*^9, 
    3.8654624757706757`*^9}, {3.8654625235228367`*^9, 
-   3.8654625327166157`*^9}},ExpressionUUID->"ed7ebdd3-dc36-4d5d-8d85-\
+   3.8654625327166157`*^9}, {3.8772800575927815`*^9, 3.877280058380512*^9}, {
+   3.877280125049499*^9, 
+   3.877280135988587*^9}},ExpressionUUID->"ed7ebdd3-dc36-4d5d-8d85-\
 a59dd666d231"]
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{1234, 686},
-WindowMargins->{{35, Automatic}, {24, Automatic}},
-FrontEndVersion->"12.0 for Mac OS X x86 (64-bit) (April 8, 2019)",
-StyleDefinitions->"Default.nb"
+WindowSize->{949, 710},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"12.1 for Microsoft Windows (64-bit) (June 19, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"ddc28799-9495-4aa2-b976-b97bc50476bc"
 ]
 (* End of Notebook Content *)
 
@@ -156,10 +160,10 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 337, 7, 67, "Section",ExpressionUUID->"e373fa3d-1468-4e76-a5b3-8c2fae1e35b8"],
+Cell[580, 22, 337, 7, 105, "Section",ExpressionUUID->"e373fa3d-1468-4e76-a5b3-8c2fae1e35b8"],
 Cell[CellGroupData[{
-Cell[942, 33, 167, 3, 45, "Subsubsection",ExpressionUUID->"f1c1e249-3e04-4e5f-87b9-f663cd987a20"],
-Cell[1112, 38, 4040, 99, 257, "Input",ExpressionUUID->"ed7ebdd3-dc36-4d5d-8d85-a59dd666d231",
+Cell[942, 33, 167, 3, 44, "Subsubsection",ExpressionUUID->"f1c1e249-3e04-4e5f-87b9-f663cd987a20"],
+Cell[1112, 38, 4253, 102, 278, "Input",ExpressionUUID->"ed7ebdd3-dc36-4d5d-8d85-a59dd666d231",
  InitializationCell->True]
 }, Open  ]]
 }, Open  ]]

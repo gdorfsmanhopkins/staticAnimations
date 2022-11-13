@@ -3,10 +3,11 @@ Code and accompanying files for the article: Deformation Spaces and Static Anima
 
 
 This repository contains code to help the user work alongside the tutorial (Section 5.2) in the article referenced above.  This includes:<br>
---A Mathematica notebook for generating an image stack of deforming polar stars (StarPlot.nb)<br>
---A complete image stack of polar stars in PNG format (Folder containing files of the form polarStar_XXXX.PNG)<br>
---A STL file exported from Chimera before postprocessing (starPlotPreProcess.stl)<br>
---A post prosessed STL of the static animation that is ready to print (starPlotPostProcess.stl)<br><br>
+--A python program for generating an image stack of deforming polar stars (starPlot.py)<br>
+--A Mathematica notebook for generating an image stack of deforming polar stars (starPlot.nb)<br>
+--A python program for removing the alpha layer from a stack of RGBA PNGs (alphaRemover.py)<br>
+--A complete image stack of polar stars in PNG format (Folder containing files of the form flowers_XXXX.PNG)<br>
+--A STL file exported from Chimera before (flower_model.stl)<br><br>
 
 We also include:<br>
 --A Mathematica notebook for generating image stacks of deformations of Julia sets (JuliaPlots.nb).<br>
